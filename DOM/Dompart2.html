@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom part 2</title>
+</head>
+<body>
+    <!-- here we will learn that if any anything is not given and we have to create , then how we wiill create that -->
+    <!-- all html is colled as DOCUMENT  -->
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>
+    <script>
+
+        // APPEND THE CHILD IN THE WEBPAGE----------------------
+          let title =  document.createElement("h1");
+          title.className = "class1"
+          title.style.fontSize = "25px";
+        //   want to add content inside the h1
+        title.textContent = "pw skills is here";
+        console.log(title);
+        // here it will now show anything in the screen 
+        // so to show that in the screen we will use
+        document.body.appendChild(title);
+
+        // REMOVE THE CHILD FROM WEBPAGE-------------------------
+
+        let one = document.querySelector("ul");
+        console.log(one);
+        let two = document.querySelectorAll("li");
+        console.log(two);
+
+        // now to remove we use for loop
+        for(list of two)
+        {
+            // it will remove all ul which is made by html
+            one.removeChild(list);
+        }
+    </script>
+</body>
+</html>

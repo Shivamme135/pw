@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom part 3</title>
+</head>
+<body>
+    <!-- normal html -->
+    <h1>hello namaste</h1>
+    <p id="name"></p>
+
+    <button onclick="hey" id="jss">submit</button>
+
+    <script>
+        // here means first we will write what we have to do and 
+        // after doing that go to hello function 
+        document.addEventListener("click", hello);
+        function hello()
+        {
+            document.getElementById("name").innerText = "namaste london";
+        }
+        function hey() {
+            document.getElementById("jss").innerText = "namaste";
+        }
+    </script>
+</body>
+</html>

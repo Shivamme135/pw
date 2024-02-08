@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="./sript.js"></script> -->
+    <title>Dom part 1</title>
+</head>
+<body>
+    <!-- ID ----------------------------------------->
+    <p id="one">namaste</p>
+    <!-- class---------------------- -->
+    <ul>
+        <li class="text">one</li>
+        <li class="text">two</li>
+        <li class="text">three</li>
+    </ul>
+
+    <!-- tagname --------------- -->
+    <h4>hello </h4>
+    <h4>namaste</h4>
+    <h4>kaise hal chal ba</h4>
+    <h4>badhiya ba</h4>
+    <script>
+        // IDIDIDIDIDIDIDIDIDIDIDIDI
+        let var1 = document.getElementById("one");
+        console.log(var1);
+        // or if we want to only check for the text we use 
+        console.log(var1.innerText);
+        // but if we use innerhtml so it will give all html what ever usd under the given id
+        console.log(var1.innerHTML)
+
+    // CLASSCLASSCLASSCLASSCLASS
+        let var2 = document.getElementsByClassName("text");
+        console.log(var2)
+        // so here to used the 2nd one in li we use 
+        console.log(var2[1].innerText)
+
+        // if we want to manipulate or change anything we can do with the help of this
+        var2[2].innerText = "nodejs"
+
+        // TAGTAGTAGTAGTAGTAG NAME 
+        let var3 = document.getElementsByTagName("h4");
+        console.log(var3[1].innerHTML);
+
+        // we can also give styling to the given text
+        var3[2].innerText = "shivam";
+        var3[2].style.color = "red";
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+/* universal selector are used to change the by default margin and padding is given*/
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+/* element selector */
+p{
+    color: white;
+}
+/* this is class selector  */
+.select{
+    color: rgb(80, 124, 160);
+}
+
+/* selector list */
+.select, .select1
+{
+    color: blanchedalmond;
+}

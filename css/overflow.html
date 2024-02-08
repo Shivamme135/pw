@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>overflow and z indext</title>
+    <style>
+        /* here we can see that some thime it will happen that content will go out of border 
+        so for this overflow come into  */
+        /* auto,sroll,hidden */
+        p{
+            height: 200px;
+            width: 200px;
+            border: 2px solid red;
+            overflow: auto;
+        }
+        .one{
+            background-color: red;
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            top: 0;
+            z-index: -1;
+        }
+        .two{
+            background-color: yellow;
+            height: 50px;
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus aliquid consectetur molestiae, hic officia dicta non possimus delectus quaerat, blanditiis esse commodi necessitatibus cumque dolore corporis accusamus consequuntur saepe ea dolorum dolor quo odio aliquam ratione. Impedit unde architecto sunt ex? Doloremque error quibusdam molestiae nemo, ipsam, corporis dignissimos eius sunt debitis ratione maiores voluptate. Minima illo delectus quod laboriosam? At quibusdam similique porro iusto asperiores exercitationem, distinctio eligendi magnam voluptates. Doloribus esse ea incidunt magnam. Similique earum doloribus consequatur recusandae nesciunt quod, nam amet obcaecati non. Deleniti distinctio recusandae voluptas tempore, nihil ratione repellat hic debitis ut, commodi autem?</p>
+
+    <div class="one">
+
+    </div>
+    <div class="two">
+
+    </div>
+</body>
+</html>
